@@ -13,4 +13,20 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    /**
+     * A test to verify that a number equals a specific value.
+     */
+    public function test_that_number_is_equal(): void
+    {
+        $this->assertEquals(5, 5);
+    }
+
+    /**
+     * A test to verify that an array contains a specific value.
+     */
+    public function test_that_array_contains_value(): void
+    {
+        $this->assertContains('php', ['php', 'javascript', 'java']);
+    }
 }

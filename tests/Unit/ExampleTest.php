@@ -29,4 +29,13 @@ class ExampleTest extends TestCase
     {
         $this->assertContains('php', ['php', 'javascript', 'java']);
     }
+
+    /**
+     * A test to verify that a variable is null.
+     */
+    public function test_that_variable_is_null(): void
+    {
+        $value = null;
+        $this->assertNull($value);
+    }
 }
